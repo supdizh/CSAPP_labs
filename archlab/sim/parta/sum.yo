@@ -1,0 +1,47 @@
+  0x000:              | 	.pos 0
+  0x000:              | init:
+  0x000: 30f400010000 | 	irmovl Stack, %esp  	# Set up Stack pointer
+  0x006: 30f500010000 | 	irmovl Stack, %ebp  	# Set up base pointer
+  0x00c: 802c000000   | 	call Main		# Execute main program
+  0x011: 00           | 	halt
+                      | 
+                      | #Sample list
+  0x014:              | 	.align 4
+  0x014: 0a000000     | ele1:	.long 0x00a
+  0x018: 1c000000     | 	.long ele2
+  0x01c: b0000000     | ele2:	.long 0x0b0
+  0x020: 24000000     | 	.long ele3
+  0x024: 000c0000     | ele3:	.long 0xc00
+  0x028: 00000000     | 	.long 0
+                      | 
+  0x02c:              | Main:	
+  0x02c: a05f         | 	pushl %ebp
+  0x02e: 2045         | 	rrmovl %esp,%ebp
+  0x030: 30f214000000 | 	irmovl ele1,%edx
+  0x036: a02f         | 	pushl %edx
+  0x038: 8042000000   | 	call Sum
+  0x03d: 2054         | 	rrmovl %ebp,%esp
+  0x03f: b05f         | 	popl %ebp
+  0x041: 90           | 	ret
+                      | 
+                      | #Sum(list_ptr lst)
+  0x042:              | Sum:	
+  0x042: a05f         | 	pushl %ebp
+  0x044: 2045         | 	rrmovl %esp,%ebp
+  0x046: 501508000000 | 	mrmovl 8(%ebp),%ecx
+  0x04c: 6300         | 	xorl %eax,%eax
+  0x04e:              | Loop:	
+  0x04e: 6211         | 	andl %ecx,%ecx #check if ele point to NULL
+  0x050: 7368000000   | 	je End
+  0x055: 502100000000 | 	mrmovl (%ecx),%edx
+  0x05b: 6020         | 	addl %edx,%eax #val+=ele->val
+  0x05d: 501104000000 | 	mrmovl 4(%ecx),%ecx #ele=ele->next
+  0x063: 704e000000   | 	jmp Loop
+  0x068:              | End:	
+  0x068: 2054         | 	rrmovl %ebp,%esp
+  0x06a: b05f         | 	popl %ebp
+  0x06c: 90           | 	ret
+                      | 
+  0x100:              | .pos 0x100
+  0x100:              | Stack:	# The stack goes here
+                      | 

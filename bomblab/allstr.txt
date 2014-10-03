@@ -1,0 +1,114 @@
+/lib/ld-linux.so.2
+__gmon_start__
+libc.so.6
+strcpy
+printf
+stdout
+connect
+__ctype_b
+getenv
+__strtol_internal
+fgets
+tmpfile
+system
+sleep
+socket
+fflush
+bzero
+cuserid
+fprintf
+__deregister_frame_info
+stdin
+signal
+bcopy
+sscanf
+gethostbyname
+sprintf
+fclose
+rewind
+exit
+fopen
+_IO_stdin_used
+__libc_start_main
+__register_frame_info
+close
+GLIBC_2.1
+GLIBC_2.0
+PTRh
+LWVS
+\WVS
+nobo
+%s: Error: Couldn't open %s
+Usage: %s [<input_file>]
+Welcome to my fiendish little bomb. You have 6 phases with
+which to blow yourself up. Have a nice day!
+Phase 1 defused. How about the next one?
+That's number 2.  Keep going!
+Halfway there!
+So you got that one.  Try this one.
+Good work!  On to the next...
+Public speaking is very easy.
+%d %c %d
+giants
+Wow! You've defused the secret stage!
+whitefish.cmcl.cs.cmu.edu
+warmouth.cmcl.cs.cmu.edu
+walleye.cmcl.cs.cmu.edu
+sturgeon.cmcl.cs.cmu.edu
+striper.cmcl.cs.cmu.edu
+sockeye.cmcl.cs.cmu.edu
+sheepshead.cmcl.cs.cmu.edu
+shad.cmcl.cs.cmu.edu
+sauger.cmcl.cs.cmu.edu
+salmon.cmcl.cs.cmu.edu
+pumpkinseed.cmcl.cs.cmu.edu
+pike.cmcl.cs.cmu.edu
+pickerel.cmcl.cs.cmu.edu
+perch.cmcl.cs.cmu.edu
+paddlefish.cmcl.cs.cmu.edu
+muskie.cmcl.cs.cmu.edu
+minnow.cmcl.cs.cmu.edu
+inconnu.cmcl.cs.cmu.edu
+grayling.cmcl.cs.cmu.edu
+gobi.cmcl.cs.cmu.edu
+flier.cmcl.cs.cmu.edu
+chum.cmcl.cs.cmu.edu
+char.cmcl.cs.cmu.edu
+bluegill.cmcl.cs.cmu.edu
+bass.cmcl.cs.cmu.edu
+So you think you can stop the bomb with ctrl-c, do you?
+Well...
+OK. :-)
+Invalid phase%s
+%d %d %d %d %d %d
+Bad host (1).
+Bad host (2).
+Bad host (3).
+Error: Premature EOF on stdin
+GRADE_BOMB
+Error: Input line too long
+ERROR: dup(0) error
+ERROR: close error
+ERROR: tmpfile error
+Subject: Bomb notification
+nobody
+defused
+exploded
+bomb-header:%s:%d:%s:%s:%d
+bomb-string:%s:%d:%s:%d:%s
+bomb
+/usr/sbin/sendmail -bm
+%s %s@%s
+ERROR: notification error
+ERROR: fclose(tmp) error
+ERROR: dup(tmpstdin) error
+ERROR: close(tmpstdin)
+BOOM!!!
+The bomb has blown up.
+%d %s
+austinpowers
+Curses, you've found the secret phase!
+But finding it and solving it are quite different...
+Congratulations! You've defused the bomb!
+generic
+isrveawhobpnutfg

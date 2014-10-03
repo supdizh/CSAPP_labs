@@ -1,0 +1,53 @@
+  0x000:              | .pos 0
+  0x000:              | init:
+  0x000: 30f400040000 | 	irmovl Stack, %esp  	# Set up Stack pointer
+  0x006: 30f500040000 | 	irmovl Stack, %ebp  	# Set up base pointer
+  0x00c: 802c000000   | 	call Main		# Execute main program
+  0x011: 00           | 	halt
+                      | 
+                      | # Sample linked list
+  0x014:              | 	.align 4
+  0x014: 0a000000     | ele1:	.long 0x00a
+  0x018: 1c000000     | 	.long ele2 
+  0x01c: b0000000     | ele2:	.long 0x0b0
+  0x020: 24000000     | 	.long ele3 
+  0x024: 000c0000     | ele3:	.long 0xc00
+  0x028: 00000000     | 	.long 0
+                      | 
+  0x02c:              | Main:
+  0x02c: a05f         | 	pushl %ebp
+  0x02e: 2045         | 	rrmovl %esp,%ebp
+  0x030: 30f214000000 | 	irmovl ele1,%edx
+  0x036: a02f         | 	pushl %edx
+  0x038: 8042000000   | 	call Sumr
+  0x03d: 2054         | 	rrmovl %ebp,%esp
+  0x03f: b05f         | 	popl %ebp
+  0x041: 90           | 	ret
+                      | 
+                      | #int Sumr(list_ptr ls)
+  0x042:              | Sumr:
+  0x042: a05f         | 	pushl %ebp
+  0x044: 2045         | 	rrmovl %esp,%ebp
+  0x046: a01f         | 	pushl %ecx #save old pointer
+  0x048: 501508000000 | 	mrmovl 8(%ebp),%ecx
+  0x04e: 6211         | 	andl %ecx,%ecx #check if ele points to NULL
+  0x050: 736f000000   | 	je rzero
+  0x055: 502104000000 | 	mrmovl 4(%ecx),%edx
+  0x05b: a02f         | 	pushl %edx
+  0x05d: 8042000000   | 	call Sumr
+  0x062: 502100000000 | 	mrmovl (%ecx),%edx
+  0x068: 6020         | 	addl %edx,%eax #val+Sumr(ls->next)
+  0x06a: 7071000000   | 	jmp End
+                      | 
+  0x06f:              | rzero:
+  0x06f: 6300         | 	xorl %eax,%eax #return 0
+                      | 
+  0x071:              | End:
+  0x071: 5015fcffffff | 	mrmovl -4(%ebp),%ecx #restore old pointer
+  0x077: 2054         | 	rrmovl %ebp,%esp
+  0x079: b05f         | 	popl %ebp
+  0x07b: 90           | 	ret
+                      | 
+  0x400:              | .pos 0x400
+  0x400:              | Stack:	# The stack goes here
+                      | 

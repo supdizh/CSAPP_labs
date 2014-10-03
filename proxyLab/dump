@@ -1,0 +1,127 @@
+thread2
+thread1
+thread3
+thread7
+thread8
+thread5
+thread6
+thread4
+server client4
+start forwarding request from client4 to server6...
+GET / HTTP/1.1
+Host: www.baidu.com
+Proxy-Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+Cookie: BAIDUID=3AC6C36EABCD931A2E1B7D952DDCB9A8:FG=1; BDUT=r0im3AC6C36EABCD931A2E1B7D952DDCB9A813b948315380; BDUSS=U1eHR4UEI2R0g1YU1WV20xb0FmMjE3d2lHenlxSlJoY2wxTnQ0Q29LSzg2dWhSQVFBQUFBJCQAAAAAAAAAAAEAAAAMkOwNc3VwZXJEaWkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALxdwVG8XcFReE; SSUDBTSP=1371626940; SSUDB=U1eHR4UEI2R0g1YU1WV20xb0FmMjE3d2lHenlxSlJoY2wxTnQ0Q29LSzg2dWhSQVFBQUFBJCQAAAAAAAAAAAEAAAAMkOwNc3VwZXJEaWkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALxdwVG8XcFReE; cflag=65535:1
+
+client4 request over
+start forwarding reply   from server6 to client4
+HTTP/1.1 200 OK
+Date: Thu, 10 Jul 2014 13:27:28 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Vary: Accept-Encoding
+Cache-Control: private
+Cxy_all: baidu+97bda900ac0bd204ecfd881c95ad1642
+Expires: Thu, 10 Jul 2014 13:26:53 GMT
+X-Powered-By: HPHP
+Server: BWS/1.1
+BDPAGETYPE: 1
+BDQID: 0xc9029a460005dc08
+BDUSERID: 0
+Set-Cookie: BDSVRTM=11; path=/
+Set-Cookie: H_PS_PSSID=7412_7509_1437_7571_5225_6995_7444_7599_7540_7532_7443_6504_6017_7202_7476_7253_7607_7133_7585_7414_7573_7474; path=/; domain=.baidu.com
+Content-Encoding: gzip
+
+3ae8
+‹ItH–%QlŠR6u©ÿ+¾½Ç'ÿþeÖ£«
+ÌìÝ‰’ws;T×3++3+_}ç•×ß¼ÿøW¿ò e“ñéWJ¥Gï=þÚ£àÍ]*Þ¥£(ìŸÞ™DYˆjÙ¬½µˆ/Ú…Þ4É¢$+eW³¨ÈoíB=Ï*Ô°Õ…ó4ÊÚ‹lP:.xzø•Ò×î•îO'³0‹»c³“‡ÚúÃÆqrÌ£q»ÐOÒÒl
+¢¬7*#|j*•´VîöÓ=ôÊ½é¤P¹¹I†&aÜ_Üº~ý%ë7^²~­ú²
+^v5g	Yœ£Óþðg/ÞýË÷~ò÷~òíÿó÷¿õÞOÿôÅÿûòýÚïÝ©ˆ*wÒìjqÒž·ü§œÒö»ÓþÕõ(Š‡£¬Y«V?¿¤ÒëéE4Œ§—¥«f¸È¦Ë­Ëy8›EóëÙ4³xš4±™Ø­‹¨ÕÑE­Iœ”Ì®¶$:]ÏÂ~?N†¥î4Ë¦gö¼E(V
+Çñ0iö€Ñ|¹5ÈîOc6¨¥{»ét¼È¢–ìdß×Gë2îg#^IkÎ‡qÒ¬´„ÖÛ%^w³ÚR‹kŽâ~?Jä°—×¢éQ&gµ]28)ÍZ}ö<çq86çßê†½óá|ºHúÍ­Á`À
+Š³â`:Ÿãâ8¾V¶$,0qœf%Þ™f2M"Ñˆ›l
+&«^fýkfãh-ãÉðº;÷£y³º¯{ÓñtÞÜªV{Ë°öhTÙà°º,wQ[Ï´OÂaÔ\ÌÇ»Dš+§°2¯\^^VzaoUÄá¬ÇÓn8®`ÜJŒÝM;ÑÁ~µvrÜ/Ï’áž‡Ò<šEa†•ÉO­Î§=t¿~X;>9>(ãÁ-®“-âá"L†î|z™]%6bGbÒgc&¿J‡„•AµÕÓÙ8¼jÆ	¨VTêŽ§½óÎhS8–Ëû ±Ex¡·q>f8&‘©4çCv0{îk§å|ŒùòçÕC@»,§#0‰Uªã°Ø£^Fq:Šÿ<¢"ì•I®½•[C§Xm
+}¾ ƒ§Ähã~šhá$U È?6"¨•2P™d8ŽJýée4\DæáÍñvÿ˜ð¶T;<¦=–qd/æÓ¤´HÓq¿îoyPÄUË­EMÑŠ““M¦¨áY/b[Â¶äñÙM'ÑÛ²ÇMV*:&©LIpx>Yéhºx¦nO’]
+‰€„Œq˜fª‘q,ÉBü¹ûX¨ÚœR¡ó0I‘ÓÅ]›¨¬HÇµ£ÁqwBêšpYöU%¢¯y`UÊ€$0­‡Å  CÍb±Z­’¬VR|@1r)õ4¢Ú8ÆbÝ´·
+¢?ªI6GÌ¬q_ éãöM%]E–ŽÂ££Þ±U,kl^*ŒU‚ˆ­œ¶œm¯CDZ,M¬ºŽ±³t¢æ'—"&Êsñ‰ªz8½Ï•¼¯ÔhÆy=Œðc´FkK"ü÷_¡ãÉ—¬ÙH;]¡Ñ1®¾D•A$-m
+iC Š¼±p™³Hò+oë«Žºô£'{’ŒÍÙÏœ ÕSsë6h4Wî3[—XÍ
+À\ñ&iÞ*5úQ8*7OôÌíÚêtLXóµ@ÆÇÂ–7[—£8‹Xx¦ûéV]Î¼f|X£Ô’ÌtºÕT”§R‡Ü³°„ã	M~Ô]§àïøk¬WâÉl:ÏÂ$3Z÷æ¸'Ÿ^„ó`¦£7BèÿƒvÐŸöÜ¦ËÐ²±Ä\&“@yBw+[¯í–_½ì·Ÿ|}ûiùµ½Ê^+»yûíí¼³'Õ§õ½öt/¸ö÷RçYx-yšf¯*éÝÂkzˆ'µ§-Z„˜ýñ78,–ƒÑî´ûlï¿Ê¦rWÊ>í¿ð³Ó"„˜·‰²_„XôˆE»;rFöyÜÙ3ÇO¦j&+†€m¥°©hNµ`íŠ0“^ÿî`>´U'de©ä=Êž/¡Þ˜^–;÷ýê—ïw`Húêãv]¯‡Y´»WFÙãx‚O­*a["¥78Irù¹Šÿ ?ŸÞéÇAÜo¤¡0˜€=RËÊ¼Ø¨'°Ê­%d¤UZÌ¬.­B$à®p®"¸«²h¸
+æ•On˜ÅØåÝ…a8}WØn…‹C/JËÎBL“Ér©èÚ…y”-æI $žÝëÁd§¹ƒ-Þ)îdaW|Îp]Æ÷1.*	Jª;Ë½ÂéûßùÞ?þ³ð³~úƒ;•ðôÌ†€ÖÅú´‘ì¥Gc{ÇÊXÂ\ôÑ_~÷£ÿü7æXã®‰ Â0Ó”Î±Á.ê•»<õíl6nO’íE›j¾qïóõ_Àÿîâ{ZèÕ«µFýðà¤¾=ž´K("ÄKzxøIñm&çúâöÁ·~cÓ\/L
+L[Ú “ëÉññ±<¼¿ý.~¥íúÁº™Ýžd\ÄýHÐŒ¿ÿÍþìw7MnÎŒéMî2X©fifxP‡}"Ñ5ïæ‹ïý@Ú4‰Ë(9_¬"•˜6®º=í·?ÉTx§µzƒÝÔOÅgfèmAAÞÜ‰ùî§ïó¥`{˜µèŸ%h>0&êCäHHƒ¶®‰í†ðwB)Hˆ–}â¼÷…o´KÂ,t\Òkß¯ƒZ+þ(û?ä!(rwà°LšÏßüMqÀ ü|ï'ï¾÷“¿“jÉ|
+¸ulÐÌJïdÌ4Ï*,´IÝìKÉfƒðb:‡Q†¤5=;W™·a¶9VQÌT4Üe%r—÷—„_—œêÎÕüê|1þÍ?…ø/{Ü.N4(ûœÎÙ5ìÞübovo<zø °÷
+éâ·_Éûž‡ÜþúÕ(ÃwÒ®—-ú’Få	lõø»kØúq8!‰H… RT˜Ÿ`ó™.¥ÙÙíxn©­¤f;¦
+E>ä ´=˜èSŒ	lt7NãÁî+¹Ï|Q”·É“¯‡¥·ï•þmµtòN'•½½Ü}6Ýãˆ<U¾€)ì„½'>¤3”Á,¶“ï©Û
+¹—n£Ôz/ÝPñðu
+!Þ…T³kðP üúeŸ_ÒpÚIáb Þ²XµU¤£Œ09Â¢’+žáb¡Ð__Ðá3ÞùŠøSª•i[/#Ø´3¨ºµ“ýò3Ò™;^:§æªè`à,wèL“NÌò®SÓõTé— ú”>kFÃuÌÖn%Â	®ª|âªžè
+Œ^['d("=³Q1ëË³þÕ…¿Û œÄc„ÜR|éR†NÇ"‚´ØûY±ß/ÂµO;þ®&P¦,ffÇá">G;ßÇoS‡öŒ{®CwØí~å©·t	ãý|ÇJEÐjîd~2ËV¢3–ÑDÖ‘°Ù'áÞë‘#Ñ2PÉ<Ð>šË.nëû¨V©ò¤–'¦ç:¾6/bÄ3G}]\…å‡¹·ŸhÝÓÎ¥G½eyPÛw<©¬j–UË³ŒJÍR •5Ì2žÙš{V9sCäÏ*ó3
+Ï=ñ¹xÎÑóg2B÷Œ9ñÄãSŠÑý„s°‚uÍP-7N˜@ñY ¯&/i7üOÈ»µ(n‘Rq‹tŽEkÏÂÔ§ÓÌÄd8þ.áÉ9œ*Õš-·ê»õ³Ý”ë:n_D”pSi„iXŽÍþ:aAçí)e@ìŠöÊçÈµ.Äìó&ÿFL÷X„³Ç”eT	Ñ´ªQ'Í'À«ÌŸè’:L‰ 'tÈ±Y…44(t
+	Ïq¤–÷rƒÃG$›Á
+*,CDÂ~Þµ?²'¾ŠXsDD•ˆ1½˜ÕØyÞ˜±¿Þ>9.‹z4òÌ¼öLt¡(!…	{<™W½4…s¦ŽV'÷è<žñb‹<¢^£š‘Ê`b7–x±.îçÖa??êg5è‡mLä4b‚~~1?¦¶¸1æçÖ!?·‚¡›…Œú8m~îÑAŸ$<ˆ~VÎƒ
++“Áœ<ÄõÊˆ\ïA/![e#l˜Ÿ„£e™Cáé·
+…'½Aq‹\‚Vä
+vU!hûDCÕŒ¢%ÜÊºÉ<×¬ôÜ¸HÍ¥uôp.ËæóõÄ–®W‰AƒZ%+˜xÅÝqð¸qöÝiÌÜCâ¾FM!¬qW#GSÐ®+#©Ã¤Hs¨k˜éð¬ÛÇ”º‹äØ¹ÉÆ(Ã‘ÁxebÕtå²sâˆ•x’ §/²œˆ„rÍ²fPžõ¬n(eƒ•0¼`«q<Ð=)¹Õ‰•åäIn5Õ×º)år±®‰tåNNÎÀèKà‘y¹2Já‡4Ï*ü§Ôà™A	ñ„ASgu„§t‘>rÄ…AlÌ¥¸èÏdÊÅ_ÞÝ¡>âÜýµyWØwûÚÁç[¯®¨X«;åV•t¶Q>Š&Bwz;…ªÊ$&´»Dís½î²Œ$z>Ý¬¤£0éËêõáiÙ>2ÍD>ÓIÔgÓY:;šLDâ¥¡Úù†t:‹<!ü	Èš4mNçâ“kIBVfLõFYW?ÉQxÏžõr…¨¶€QgOhí³Bã¬ð×›$C†Y§4äò
+Æ2¸s•Á5‡EþÐMµ]«z„­™&~ã,œïNÂ>*ICì?›ýJÈ™
+…Ds? 9õJ 0åØUV®‹=‚¢‹¨¿J^6¡VÞœKŽÉ«äT§’““»E&9fª,s˜\œ¨µEÉagéYØ)ãÖ©½U¦/bÃ4Îî-NF7˜S˜×Ke¤“M>¥,tMnJB§IŠ›lÔ&3QD3Iëª<&¨ÝEÖ§Ù
+'õ²Ì«“ç¬ÐZ¥ÑÓýˆì/¢
+w³myÅo3ó–N·1õ6ŒÜ\mð·êüÒ½7¾bŠæ”‘ä¬ -ÆÂ7Tò*É¹‚ÂÃ‚ÝDÏ
+{Væ[ãŒÝ÷ë`#mh>ùü¼*	,Ý´Õ'Fæ«´Ú•ÜÇ±v ¨$«Â`ËŸõQféâÉÀÎ:*d£
+¾”Oæo±}ÈrÜ@ë·hoj¤¼² ùh¥)sôRsN/	¯5i$—Sz±ë	€]›ºasû!ã½’üCÔ¡Ö*ØÑ}*¡œŸÙ­î“»ú#³Ä‰f8€O5šò›*šg…òYÁ¡Ý’´ [nj#¬ãìJ%ú7ú¼V¦W"¹Ä/w²0ºêÀIÍÓ„ÌÊU¿x-SÎÅNÈz´DÑSœP²@“kRº\ÖÌ©ŠKJUÅµO oI6K¼Îé¡IÌ¡ÏÖÉ*ìËCÄºkòE¿·V¸¨wÈ‘^¢ë-à‘9¹1×»q©¢Sê&'cF `#‘ÏôsßÚ€éá‚Çb¿"Á5<‰tË[3”¢±&Ò²ÃbfS¢kÔŠæ`U~áœÛ¸´ºŠ¦ù°îV‹üS®ïi·:œÕD¾JcJI”³« \¯§p9^ó@åÒ6È:ný¸KWw˜[URwzq¥çß¶le`ÄÈ-˜€(ü¾§êõUu2	½ë"O*í˜=’³Ë5Õ›•x8æÓ®‹ïq¢ô;ŸÊ¨rïèz.í!DE©|ÁCîÂQ?D-ñ…ŽK>3¸+Êv‚àñ¦Âkô+0?oõéÇ,³;¢%Þ®'¼vÄìF ±â3¢$”ÒÞQ5=”óìHêÀ`é®å¥iÒ·¨ÁvI}²T71Þ; ˆ=%Ø´:äÐâÇok©¯é¤§ßàÑ8 ¡Q2õýy&"Ö#&Ëi ;RuA=zêCq4)ÅÚØÎ]
+ýfõ”-Cnè@Ã»#’c‘wóôÀ‡9	s’ºùg¨*ÚCùþœÕmàºì¡¤öÐÈ6ìfñv®¤†$+Ó^˜ü2U­ö™gÓpd¤"¶g±:‚Ì;¼ÚQ2…sk$Ãø¢g"Ô3¸h£vB|+Ql€BÌý^·ß€×ÍÊ´½-a¬E$xðö}¶[22Y#îïß872Ãðö´ËÙj<M£kÃo•ýyX%gó·>Oƒµ™Èæ—$ƒ¬lGÜ›uüT€“M?q%U:'¥áe±ÌI"qxLŸ†zïäˆè*Ë
+ááUWÞB´\ÅšXøP×1šŒÇ3Þº­™õ©Ä"TÐ1û¤B#ÎùÇùÊÛq‰‡¹~
+Æ“t‘Xj)&˜·7¥W?'öž‡Ð"zmsÂ}"9ŒQ7?ñËPlÇðR"Ö†ÔNQä½Ç;x¥ûò¤&¯EÇGÑ N½ÀJÁä0
+PR.Xðä§V	U±vÑäj½ãjÿD1x×Õ‘“''Gê)a‰‘]<\nFT¼«¿ìü„Ì¡ÎS/½ÂºÄ´è/ÑÛGT+r~¥€ì%1:pN
+‘òA=šÈ~`á[×¿`óµ@õC×/vk6zÃÄ½ÌzàÎ•ð?cÆáÑ¹@1þ`{L¹57âVq†ùøíy¹MþÉ÷M%ÈîÃñýŸ0†Ïz×çí_Šø	Gu^óÙ+
+æH<à²aÚ,}:À¡Zv!Ô1Éî•†óPôJÅô0œÑm¤$¼¥€E„™Yšˆç&ÉfŒ‘Á²[K"ft JÜ	ÝÐ,Õc1c*äT`ÀU˜Š	2J«ö¿¸ÄîAT2ºà×ÚŠÆZòŠÎ€Ær¸Îši»]­.]vDò˜x‰Žqì\FbÉû¬¾öhì½î);=Éœîx«*pÖÀ¯Í[„–ßˆ',¹úÞƒ®­Ü^0wš‘|IŽ©¥óUýØË„)K·2Û°fÏÛZÑœá„k€ºú&fóíaß`æfÂ¤ñReÜ“9Î“O“ž³eæ£m'íù«¹A
+_¥ÉËär#—¶„Áv“Å‹Üeµ‘[*k©¬¡ø™$T¶¯4ò˜RÙ,;‘–ÊeY­."KéU6É‘*$FLË¢ÂcUx(@Ì…'ªPÓ¢&¢ç¥:‰Ž‡j_Sý:ù|êÒÜjo¬Qõ²‡ccMˆÔ¥
+z¿©îA-«A÷_]ªÖ80VS+k(,-¢¦–Ö W‚êÔÚö•Š—êÖÕÚö÷µÕÕÚöÉ\õPWkÛ?6ÖV×ÛE¾º®ZÛpö¬Ó)§aêÃ¾úp >ªGêÃ±úp¢> ãì¨†r—tç5Ý{Mw_Óý×ô—*LñW"ÎB;Áãº}SpüÚîK‰iU«½©îÆÁ˜‰«›<ÂmMFq­÷—-?–­²zdEoßÀã¾²¡û©û‚Ñµus(4Iü[+¡(-U^Í#¦I’c×õ	lRìñTô‰n+ÝZ;ë}Ý”ÜxYOà±(‹rº¢Ð"Ù°b:§H­äWv»å:I€´u¸¿9öry~*}à}vt,g"‹âmãBäP>W[æÖt½õkµ2®‡baò­É¹:–âóÅ¼µwûávœ‹‘°´:+V$mðþ`»¦iãtï\/ëÑ%
+¿8°"óWë‹íj®ë¨bª+©¯UÍMî‰²æº!}Š!ªCI‚¸æ[a‰¶æµa.Ây>9¼ýI8!Ùß¦ r9•kP\†ó(¦¿Cñ¨??§úólÆ÷užÊ¬?ÐŸ³çF9¢.JxÕ\ï\?†çvþœ“É
+k½®@!…úK:è#ØÈè¤ËÔô1Êv$Ys4ÍîÅó/ ¦VM¦Ó|ÑðE¢ìp–?¾ÐE\ÄasÖ¸«’$šÍ±½xŽ+®n+·®8Cê¼d¸¶¾¹Õ,þÚ}:r<¬À’ßTd–	¢|U*<S^<ó@æÝe€²È%sdž“¼Ù˜Œˆm’ã-àH5îËÀ[óH8EöÁXóÐÓ•²P8-ÆWó¸ç”]8ßG‹Ø)é†S§9¤Ó©ŠÖÈÕHÉím6‚Hé´Nnérê„ñÜ)aß”º;ùš[°R£áÔ¸¤„ð¢ÌÐRáµöˆd>îzwåÑ[=.rLe`;eÎ.­yêk©÷Éi#6Ê)¼pÇ¥­rêÐ^9Er³œRrÒÆn¹uy»œBÚ/§ˆ6Ì)¢sŠä–9¥5·ÞE}¥¤á–ˆm]9ûÖÃÃ°k°mu—TéÇ¼ Áñ2Ê„£¢¼¶n!ñ6~|·¦
+•«Ô†šÖýjm=é4]|Y.©*ÄÊ	>}	8S \UÝøvu¦sê\Ó}Éôg]ú«@«ü)á“þDÒŸAú3PG8£¿^°ÈÈü‚%^ñ‘DþÈxqÛu)¡J(4—ÝÂqY¢­¯‡ý£VGÆõFxÃr¸ËÛ[ƒ=ÜÓ{vã/j¥dê0à‹º§¬á)ËÛ– ³q*Ö"ºþê³¼/õL1f©€dð­Á“X8Rà_¹¼±pe¶®ZÇŠæ%åÉ"·ÓèE>’¹94ô¹3–• üã-½9&Ñ„ŒŠ'r‰Ò>aÌéÈ'ížÐ,ŒÆ†0ªn±ÜÕ`"ñša4cÆJlÑÎEˆ<Á=¥ß‚]¹â%‰}x–y[ìÜHçnu/6}ÃÀ®§ƒØ9eºd»w×,µ·ÝÚÈÎÁÊ·Vž³[Hæ`õCÏJ)gášê'Ø¦•ÞÇÓîšîÙWÄ­O9óüÝ×É±Ï­¤Ä%Ï;û:é[Üú¤Ø^S¬l«ºßx‡hÐ-Ém#Ž¦•ý­Ž=S’7
+ÿ÷IäŽ¦Û-Ö Ô~Ã3G£•¸z­‘’7¸#¦x§ù†Õí{¶‰Û¬›áAÕn±dwrgFÕ7Ìì€H‡Ûf1ÛÔ‚T†nEÉ5KðÃîT­n[7oj(<©lú¢åÀý5#úÓ-=4abÏy/ÚúH“|W€¿^ƒ²
+ÑK~ê]ÂûTV[Â§Ž;£5cùh•º/°7û¯xWvì#Dª­°Ìlhì#K¼9ü£È”‘E³FóÕP'W}ÿÜ$2Xµ£ç=$ó@ê-ïj$X-Ôb¤/·dSÞvàðþÁ$NXÄ}Î__q,««¼sRË;©ãHt°¾e:†ÉÁk’qY••jÊ?1Å»¬&¤
+[S]"ÉJu•M-¦IDêtyxUÇ<‡Á¾M¬ý4%-{¡«Ø—5+r±5¤RC’ç\¶”ˆþf¤t›ñËÒMAÖßTòLXfÅŠcúZ]Eã1G¼£)ži†ÄÖ
+äw_2K«‘Mí6ÌTrM{¦£è‰ñÊC'¤îŸ«âžVKa"õ®MqÎÕú›$Å;­VˆhÆ=nNÏc`XmùG•œÔj?B[ÿ¢óôL’ï7âË¡n^R–AqyY3¬—væX«wuÊ‡v_Öó
+ÅN­6ëD$ÅI­Êë¥#Å>­ê ìç»QM÷dª[Ð†vä£œ«8¿ußµ¦iŠ¦t^ÖµõQT«k>ÖÔ–b„ˆl]ÓÀG£LÃDnFXÓl™&—Ü^áï@	Ö”/rCÍEnXÓ¸¦mÆðÀ±3Œ,7´ö?cÆ›[kAÄZ»´LùhŸ@¬ÚÂ»@-{Xmg
+/T!r°N@‹¶DæmcÆL®´Sr°i–ñÎW‰MƒoP}	’a7Ö¾¾áha¯tÚ7Ã¿D9;«‰È¡»®wå&Ê±U»¶ê‡}Aê8p>{™Ü7aÀz­JëÐiX¶.Vøz«ÊÍ·«;#Îµ6Éb«í¦¦-Ñ³µ6'%ÓµsUfGß¸GË—lÕ’¹ih	%«ÁÓ7rI®ø†¶›F—JKÏL#©op,›=W§m®›†‹¶Ûó¢oU.ysËM#ËožºŸÓŠIà\»béä?
+¥íÜ%ûÇUgû†¶›V-UÀº‡9½4£ú·ò<%·Z–
+þ§œÚ¬%kÛ5Ÿ”¼u_â^ŸTÚíS›V(´óÂoòv1ªÈÝn¤l_7”2Éà‘šEÃ5Ýf×Ÿ†&£¬ÞeêDKÔ÷J.‡Mi‘6dóƒ\òy«hæ\\
+W4“¸Ã!6€§íKJA»ÃåÐ¹šgA¹Ñä	µ¨'Ž²ÒDä)šd`–˜®ùJÙU½Ëù¡Ö&ê¬+Z”e–2RéIÒøxÑÌºª%Èâºß’gb¡´ŒÖüTÚs	ƒx2ƒu8D­rúµ^÷h@¯àš-ºc›[ËÔõ<z	í¡tÜ¨²³"Ow%[k êôd64ª‡¤ÃCÛQÂ¿U®åOÖ:¨÷êG"·õ&Ôf~,º «ïy.éwu£ß™ÂÃz£{2è›‡I¯:_2®(¡å½•;r2lDÅÿŸ]y™$”²O™=ìd82ÂŒë»6<åðÂêÓ;ò¯„z§“^Æu=>Lf
+ü†l†ßìáGeá¬ðTµçaŸ`X>ðì2JÎø;
+§µ:5¥wó 6ª3mMÐ¦iwéWÓ~ÔR¨Íxü¥Ýi÷ÙÞ5>>øeúXÐ+º 
+~¡h¼§EE)
+Þy']`OÄtÉåŒx~T ¨•A$z1à'åè´w¤ÞîõÎ`²ÓÜéF£t§¸ï«¦Q©¸³HvšQ²‚‹doI\ÿp-ÙeÉcW[øs'X”š2ÌFøöÚk{×r¡‹'ñSýäÂn\ *Ï}î`#w‚×Ä~¢Ü;âøÜîa|îïËiÞ6Î\H÷ç)F¼¦!	ivšÁ“Ê7·Sv8»b¥Båev5`
+›¤w3nn÷Æíúö<i×«Û½¬]ÛŽ£ö"”Žwž°ÏÄ;¹ÇóK£?ÆJ£ÃÁ]§@WßTÄ£­8¿wgI»J©U·Ç“vUŽl£GWÆð“E
+^‘¯Gv1˜·g©»œß48ë­ÑE|Ë¯WkúáÁI]€%é ˜ˆSšÑo^îbOQbì#zJ%,™"øæÂVÀY!º§eô	¿q¤9n0eñõÇVú3PdÉ‡¿?Ü›ƒêO¾¸»“\ììA}wÆçø€¿½ÙÎÞÓâù%žã‘PaÌƒüØƒ1Š^òƒ„“<G8ÍÎ£+T9¿<
+7ØézR´qª
+Ï¸keôõ%‚Ó ŠBfê}ôÁµžTŸ)¬þ^{Z_é÷kÁn –@ÇžP
+ŒÀCCw¶‰¬¡ã×‚6}ÄÀ{`»øAWš³ïÜÝÙ£™ jÒPìÙM=ÝsoøiIŽš‚9£çÖ2ˆ å×öã^›Gw¬:»lùµ3‘gDwöö²î(›ŒOÿå¿ø¿yEöiÏ0
+
+server client5
+start forwarding request from client5 to server8...
+GET /passApi/js/uni_login_wrapper.js?cdnversion=1404998849940&_=1404998849870 HTTP/1.1
+Host: passport.baidu.com
+Proxy-Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36
+Referer: http://www.baidu.com/
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+Cookie: BAIDUID=3AC6C36EABCD931A2E1B7D952DDCB9A8:FG=1; BDUT=r0im3AC6C36EABCD931A2E1B7D952DDCB9A813b948315380; BDUSS=U1eHR4UEI2R0g1YU1WV20xb0FmMjE3d2lHenlxSlJoY2wxTnQ0Q29LSzg2dWhSQVFBQUFBJCQAAAAAAAAAAAEAAAAMkOwNc3VwZXJEaWkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALxdwVG8XcFReE; PTOKEN=2b7c252981f7d66dc3cbcb67ede733e4; STOKEN=f36648bc7c703135ca1826bc2a972492; SAVEUSERID=d615d5bbe7a459815c6ddc0e; SSUDBTSP=1371626940; SSUDB=U1eHR4UEI2R0g1YU1WV20xb0FmMjE3d2lHenlxSlJoY2wxTnQ0Q29LSzg2dWhSQVFBQUFBJCQAAAAAAAAAAAEAAAAMkOwNc3VwZXJEaWkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALxdwVG8XcFReE; UBI=fi_PncwhpxZ%7ETaJc%7E8PntqwSx6naw-Q7H3S; HOSUPPORT=1; cflag=65535:1; H_PS_PSSID=7412_7509_1437_7571_5225_6995_7444_7599_7540_7532_7443_6504_6017_7202_7476_7253_7607_7133_7585_7414_7573_7474
+
+client5 request over
+start forwarding reply   from server8 to client5
+server client7
+start forwarding request from client7 to server10...
+GET /su?wd=&zxmode=1&json=1&p=3&sid=7412_5229_1450_7571_5223_6996_7447_7599_7539_7532_7442_6505_6017_7203_6931_7253_7607_7415_7572_7475&cb=jQuery1102029143407731316984_1404998849871&_=1404998849872 HTTP/1.1
+Host: suggestion.baidu.com
+Proxy-Connection: keep-alive
+Accept: */*
+User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.110 Safari/537.36
+Referer: http://www.baidu.com/
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: zh-CN,zh;q=0.8,en;q=0.6
+Cookie: BAIDUID=3AC6C36EABCD931A2E1B7D952DDCB9A8:FG=1; BDUT=r0im3AC6C36EABC

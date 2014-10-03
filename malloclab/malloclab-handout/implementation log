@@ -1,0 +1,23 @@
+seemingly quite a lot of work
+
+version 0
+already implemented
+No free list
+everytime malloc, make a chunk of mem by mem_brk
+free() does nothing
+realloc(old_ptr, size) simply get a new place(size) and copy over all things in old_ptr(size)
+
+version 0.1
+copy over the implicit list in Text books of "first-fit"
+
+version 0.2
+copy over the "next fit" of implicit list
+
+version 0.3 more 
+try explicit free list
+
+version 0.4 more 
+try segregate free list
+
+version 0.5 more 
+try buddy system

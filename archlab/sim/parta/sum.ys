@@ -1,0 +1,47 @@
+	.pos 0
+init:
+	irmovl Stack, %esp  	# Set up Stack pointer
+	irmovl Stack, %ebp  	# Set up base pointer
+	call Main		# Execute main program
+	halt
+
+#Sample list
+	.align 4
+ele1:	.long 0x00a
+	.long ele2
+ele2:	.long 0x0b0
+	.long ele3
+ele3:	.long 0xc00
+	.long 0
+
+Main:	
+	pushl %ebp
+	rrmovl %esp,%ebp
+	irmovl ele1,%edx
+	pushl %edx
+	call Sum
+	rrmovl %ebp,%esp
+	popl %ebp
+	ret
+
+#Sum(list_ptr lst)
+Sum:	
+	pushl %ebp
+	rrmovl %esp,%ebp
+	mrmovl 8(%ebp),%ecx
+	xorl %eax,%eax
+Loop:	
+	andl %ecx,%ecx #check if ele point to NULL
+	je End
+	mrmovl (%ecx),%edx
+	addl %edx,%eax #val+=ele->val
+	mrmovl 4(%ecx),%ecx #ele=ele->next
+	jmp Loop
+End:	
+	rrmovl %ebp,%esp
+	popl %ebp
+	ret
+
+.pos 0x100
+Stack:	# The stack goes here
+

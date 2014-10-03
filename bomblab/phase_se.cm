@@ -1,0 +1,72 @@
+   0x08048ee8 <+0>:  push   %ebp
+   0x08048ee9 <+1>:  mov    %esp,%ebp
+   0x08048eeb <+3>:  sub    $0x14,%esp
+   0x08048eee <+6>:  push   %ebx
+=> 0x08048eef <+7>:  call   0x80491fc <read_line>
+   0x08048ef4 <+12>: push   $0x0
+   0x08048ef6 <+14>: push   $0xa //base 10
+   0x08048ef8 <+16>: push   $0x0
+   0x08048efa <+18>: push   %eax //input string
+   0x08048efb <+19>: call   0x80487f0 <__strtol_internal@plt>  //string to long int
+   0x08048f00 <+24>: add    $0x10,%esp
+   0x08048f03 <+27>: mov    %eax,%ebx //ret = eax = ebx
+   0x08048f05 <+29>: lea    -0x1(%ebx),%eax  //eax = ret-1
+   0x08048f08 <+32>: cmp    $0x3e8,%eax      //ret-1<=0x3e8
+   0x08048f0d <+37>: jbe    0x8048f14 <secret_phase+44>
+   0x08048f0f <+39>: call   0x80494fc <explode_bomb>
+   0x08048f14 <+44>: add    $0xfffffff8,%esp
+   0x08048f17 <+47>: push   %ebx
+   0x08048f18 <+48>: push   $0x804b320
+   0x08048f1d <+53>: call   0x8048e94 <fun7>
+   0x08048f22 <+58>: add    $0x10,%esp
+   0x08048f25 <+61>: cmp    $0x7,%eax
+   0x08048f28 <+64>: je     0x8048f2f <secret_phase+71>  //return = 7
+   0x08048f2a <+66>: call   0x80494fc <explode_bomb>
+   0x08048f2f <+71>: add    $0xfffffff4,%esp
+   0x08048f32 <+74>: push   $0x8049820
+   0x08048f37 <+79>: call   0x8048810 <printf@plt>
+   0x08048f3c <+84>: call   0x804952c <phase_defused>
+   0x08048f41 <+89>: mov    -0x18(%ebp),%ebx
+   0x08048f44 <+92>: mov    %ebp,%esp
+   0x08048f46 <+94>: pop    %ebp
+   0x08048f47 <+95>: ret  
+
+
+
+   Fun7----------------------
+      0x08048e94 <+0>:  push   %ebp
+   0x08048e95 <+1>:  mov    %esp,%ebp
+   0x08048e97 <+3>:  sub    $0x8,%esp
+=> 0x08048e9a <+6>:  mov    0x8(%ebp),%edx  //edx = 134525728
+   0x08048e9d <+9>:  mov    0xc(%ebp),%eax  //eax = y number
+   0x08048ea0 <+12>: test   %edx,%edx
+   0x08048ea2 <+14>: jne    0x8048eb0 <fun7+28> //leaf reached,return -1
+   0x08048ea4 <+16>: mov    $0xffffffff,%eax
+   0x08048ea9 <+21>: jmp    0x8048ee2 <fun7+78>  
+   0x08048eab <+23>: nop
+   0x08048eac <+24>: lea    0x0(%esi,%eiz,1),%esi
+   0x08048eb0 <+28>: cmp    (%edx),%eax //24
+   0x08048eb2 <+30>: jge    0x8048ec5 <fun7+49>  //eax>=0x24
+   0x08048eb4 <+32>: add    $0xfffffff8,%esp
+   0x08048eb7 <+35>: push   %eax                
+   0x08048eb8 <+36>: mov    0x4(%edx),%eax      //left sub tree
+   0x08048ebb <+39>: push   %eax
+   0x08048ebc <+40>: call   0x8048e94 <fun7>
+   0x08048ec1 <+45>: add    %eax,%eax           //2*eax
+   0x08048ec3 <+47>: jmp    0x8048ee2 <fun7+78>
+   0x08048ec5 <+49>: cmp    (%edx),%eax
+   0x08048ec7 <+51>: je     0x8048ee0 <fun7+76> //if eax=root->value,return 0,found
+   0x08048ec9 <+53>: add    $0xfffffff8,%esp
+   0x08048ecc <+56>: push   %eax //my value
+   0x08048ecd <+57>: mov    0x8(%edx),%eax //search right subtree
+   0x08048ed0 <+60>: push   %eax
+   0x08048ed1 <+61>: call   0x8048e94 <fun7>
+   0x08048ed6 <+66>: add    %eax,%eax
+   0x08048ed8 <+68>: inc    %eax
+   0x08048ed9 <+69>: jmp    0x8048ee2 <fun7+78>  //2*eax+1
+   0x08048edb <+71>: nop
+   0x08048edc <+72>: lea    0x0(%esi,%eiz,1),%esi
+   0x08048ee0 <+76>: xor    %eax,%eax //return with 0,
+   0x08048ee2 <+78>: mov    %ebp,%esp
+   0x08048ee4 <+80>: pop    %ebp
+   0x08048ee5 <+81>: ret //i want return of 7

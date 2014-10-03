@@ -1,0 +1,62 @@
+        .pos 0
+init:   irmovl Stack, %esp      # Set up Stack pointer
+        irmovl Stack, %ebp      # Set up base pointer
+        call Main               # Execute main program
+        halt
+	.align 4
+# Source block
+src:
+	.long 0x00a
+	.long 0x0b0
+	.long 0xc00
+# Destination block
+dest:
+	.long 0x111
+	.long 0x222
+	.long 0x333
+
+Main:   pushl %ebp
+        rrmovl %esp,%ebp
+        irmovl $3,%eax
+        pushl %eax
+        irmovl dest,%eax
+        pushl %eax
+        irmovl src,%eax
+        pushl %eax
+        call Copy
+        rrmovl %ebp,%esp
+        popl %ebp
+        ret
+
+Copy:	
+	pushl %ebp
+	rrmovl %esp,%ebp
+	pushl %ebx
+	pushl %esi
+	mrmovl 8(%ebp),%ecx #src
+	mrmovl 12(%ebp),%edx #dest
+	mrmovl 16(%ebp),%ebx #len
+	xorl %eax,%eax #result=0
+	andl %ebx,%ebx
+	je End
+
+Loop:
+	mrmovl (%ecx),%esi
+	rmmovl %esi,(%edx)
+	xorl %esi,%eax
+	irmovl $4,%esi
+	addl %esi,%ecx
+	addl %esi,%edx
+	irmovl $-1,%esi
+	addl %esi,%ebx
+	jne Loop
+
+End:
+	rrmovl %ebp,%esp
+	popl %ebx
+	popl %esi
+	popl %ebp
+	ret	
+
+	.pos 0x400
+Stack:  #The stack goes here

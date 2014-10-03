@@ -1,0 +1,182 @@
+Y86 Processor: seq-full.hcl
+146 bytes of code read
+IF: Fetched irmovl at 0x0.  ra=----, rb=%esp, valC = 0x400
+IF: Fetched irmovl at 0x6.  ra=----, rb=%ebp, valC = 0x400
+IF: Fetched jmp at 0xc.  ra=----, rb=----, valC = 0x24
+IF: Fetched irmovl at 0x24.  ra=----, rb=%eax, valC = 0x4
+IF: Fetched pushl at 0x2a.  ra=%eax, rb=----, valC = 0x0
+Wrote 0x4 to address 0x3fc
+IF: Fetched irmovl at 0x2c.  ra=----, rb=%edx, valC = 0x14
+IF: Fetched pushl at 0x32.  ra=%edx, rb=----, valC = 0x0
+Wrote 0x14 to address 0x3f8
+IF: Fetched call at 0x34.  ra=----, rb=----, valC = 0x3a
+Wrote 0x39 to address 0x3f4
+IF: Fetched pushl at 0x3a.  ra=%ebp, rb=----, valC = 0x0
+Wrote 0x400 to address 0x3f0
+IF: Fetched rrmovl at 0x3c.  ra=%esp, rb=%ebp, valC = 0x0
+IF: Fetched irmovl at 0x3e.  ra=----, rb=%eax, valC = 0x14
+IF: Fetched subl at 0x44.  ra=%eax, rb=%esp, valC = 0x0
+IF: Fetched pushl at 0x46.  ra=%ebx, rb=----, valC = 0x0
+Wrote 0x0 to address 0x3d8
+IF: Fetched mrmovl at 0x48.  ra=%ebx, rb=%ebp, valC = 0x8
+IF: Fetched mrmovl at 0x4e.  ra=%eax, rb=%ebp, valC = 0xc
+IF: Fetched andl at 0x54.  ra=%eax, rb=%eax, valC = 0x0
+IF: Fetched jle at 0x56.  ra=----, rb=----, valC = 0x8b
+IF: Fetched irmovl at 0x5b.  ra=----, rb=%edx, valC = 0xfffffff8
+IF: Fetched addl at 0x61.  ra=%edx, rb=%esp, valC = 0x0
+IF: Fetched irmovl at 0x63.  ra=----, rb=%edx, valC = 0xffffffff
+IF: Fetched addl at 0x69.  ra=%edx, rb=%eax, valC = 0x0
+IF: Fetched pushl at 0x6b.  ra=%eax, rb=----, valC = 0x0
+Wrote 0x3 to address 0x3cc
+IF: Fetched irmovl at 0x6d.  ra=----, rb=%edx, valC = 0x4
+IF: Fetched rrmovl at 0x73.  ra=%ebx, rb=%eax, valC = 0x0
+IF: Fetched addl at 0x75.  ra=%edx, rb=%eax, valC = 0x0
+IF: Fetched pushl at 0x77.  ra=%eax, rb=----, valC = 0x0
+Wrote 0x18 to address 0x3c8
+IF: Fetched call at 0x79.  ra=----, rb=----, valC = 0x3a
+Wrote 0x7e to address 0x3c4
+IF: Fetched pushl at 0x3a.  ra=%ebp, rb=----, valC = 0x0
+Wrote 0x3f0 to address 0x3c0
+IF: Fetched rrmovl at 0x3c.  ra=%esp, rb=%ebp, valC = 0x0
+IF: Fetched irmovl at 0x3e.  ra=----, rb=%eax, valC = 0x14
+IF: Fetched subl at 0x44.  ra=%eax, rb=%esp, valC = 0x0
+IF: Fetched pushl at 0x46.  ra=%ebx, rb=----, valC = 0x0
+Wrote 0x14 to address 0x3a8
+IF: Fetched mrmovl at 0x48.  ra=%ebx, rb=%ebp, valC = 0x8
+IF: Fetched mrmovl at 0x4e.  ra=%eax, rb=%ebp, valC = 0xc
+IF: Fetched andl at 0x54.  ra=%eax, rb=%eax, valC = 0x0
+IF: Fetched jle at 0x56.  ra=----, rb=----, valC = 0x8b
+IF: Fetched irmovl at 0x5b.  ra=----, rb=%edx, valC = 0xfffffff8
+IF: Fetched addl at 0x61.  ra=%edx, rb=%esp, valC = 0x0
+IF: Fetched irmovl at 0x63.  ra=----, rb=%edx, valC = 0xffffffff
+IF: Fetched addl at 0x69.  ra=%edx, rb=%eax, valC = 0x0
+IF: Fetched pushl at 0x6b.  ra=%eax, rb=----, valC = 0x0
+Wrote 0x2 to address 0x39c
+IF: Fetched irmovl at 0x6d.  ra=----, rb=%edx, valC = 0x4
+IF: Fetched rrmovl at 0x73.  ra=%ebx, rb=%eax, valC = 0x0
+IF: Fetched addl at 0x75.  ra=%edx, rb=%eax, valC = 0x0
+IF: Fetched pushl at 0x77.  ra=%eax, rb=----, valC = 0x0
+Wrote 0x1c to address 0x398
+IF: Fetched call at 0x79.  ra=----, rb=----, valC = 0x3a
+Wrote 0x7e to address 0x394
+IF: Fetched pushl at 0x3a.  ra=%ebp, rb=----, valC = 0x0
+Wrote 0x3c0 to address 0x390
+IF: Fetched rrmovl at 0x3c.  ra=%esp, rb=%ebp, valC = 0x0
+IF: Fetched irmovl at 0x3e.  ra=----, rb=%eax, valC = 0x14
+IF: Fetched subl at 0x44.  ra=%eax, rb=%esp, valC = 0x0
+IF: Fetched pushl at 0x46.  ra=%ebx, rb=----, valC = 0x0
+Wrote 0x18 to address 0x378
+IF: Fetched mrmovl at 0x48.  ra=%ebx, rb=%ebp, valC = 0x8
+IF: Fetched mrmovl at 0x4e.  ra=%eax, rb=%ebp, valC = 0xc
+IF: Fetched andl at 0x54.  ra=%eax, rb=%eax, valC = 0x0
+IF: Fetched jle at 0x56.  ra=----, rb=----, valC = 0x8b
+IF: Fetched irmovl at 0x5b.  ra=----, rb=%edx, valC = 0xfffffff8
+IF: Fetched addl at 0x61.  ra=%edx, rb=%esp, valC = 0x0
+IF: Fetched irmovl at 0x63.  ra=----, rb=%edx, valC = 0xffffffff
+IF: Fetched addl at 0x69.  ra=%edx, rb=%eax, valC = 0x0
+IF: Fetched pushl at 0x6b.  ra=%eax, rb=----, valC = 0x0
+Wrote 0x1 to address 0x36c
+IF: Fetched irmovl at 0x6d.  ra=----, rb=%edx, valC = 0x4
+IF: Fetched rrmovl at 0x73.  ra=%ebx, rb=%eax, valC = 0x0
+IF: Fetched addl at 0x75.  ra=%edx, rb=%eax, valC = 0x0
+IF: Fetched pushl at 0x77.  ra=%eax, rb=----, valC = 0x0
+Wrote 0x20 to address 0x368
+IF: Fetched call at 0x79.  ra=----, rb=----, valC = 0x3a
+Wrote 0x7e to address 0x364
+IF: Fetched pushl at 0x3a.  ra=%ebp, rb=----, valC = 0x0
+Wrote 0x390 to address 0x360
+IF: Fetched rrmovl at 0x3c.  ra=%esp, rb=%ebp, valC = 0x0
+IF: Fetched irmovl at 0x3e.  ra=----, rb=%eax, valC = 0x14
+IF: Fetched subl at 0x44.  ra=%eax, rb=%esp, valC = 0x0
+IF: Fetched pushl at 0x46.  ra=%ebx, rb=----, valC = 0x0
+Wrote 0x1c to address 0x348
+IF: Fetched mrmovl at 0x48.  ra=%ebx, rb=%ebp, valC = 0x8
+IF: Fetched mrmovl at 0x4e.  ra=%eax, rb=%ebp, valC = 0xc
+IF: Fetched andl at 0x54.  ra=%eax, rb=%eax, valC = 0x0
+IF: Fetched jle at 0x56.  ra=----, rb=----, valC = 0x8b
+IF: Fetched irmovl at 0x5b.  ra=----, rb=%edx, valC = 0xfffffff8
+IF: Fetched addl at 0x61.  ra=%edx, rb=%esp, valC = 0x0
+IF: Fetched irmovl at 0x63.  ra=----, rb=%edx, valC = 0xffffffff
+IF: Fetched addl at 0x69.  ra=%edx, rb=%eax, valC = 0x0
+IF: Fetched pushl at 0x6b.  ra=%eax, rb=----, valC = 0x0
+Wrote 0x0 to address 0x33c
+IF: Fetched irmovl at 0x6d.  ra=----, rb=%edx, valC = 0x4
+IF: Fetched rrmovl at 0x73.  ra=%ebx, rb=%eax, valC = 0x0
+IF: Fetched addl at 0x75.  ra=%edx, rb=%eax, valC = 0x0
+IF: Fetched pushl at 0x77.  ra=%eax, rb=----, valC = 0x0
+Wrote 0x24 to address 0x338
+IF: Fetched call at 0x79.  ra=----, rb=----, valC = 0x3a
+Wrote 0x7e to address 0x334
+IF: Fetched pushl at 0x3a.  ra=%ebp, rb=----, valC = 0x0
+Wrote 0x360 to address 0x330
+IF: Fetched rrmovl at 0x3c.  ra=%esp, rb=%ebp, valC = 0x0
+IF: Fetched irmovl at 0x3e.  ra=----, rb=%eax, valC = 0x14
+IF: Fetched subl at 0x44.  ra=%eax, rb=%esp, valC = 0x0
+IF: Fetched pushl at 0x46.  ra=%ebx, rb=----, valC = 0x0
+Wrote 0x20 to address 0x318
+IF: Fetched mrmovl at 0x48.  ra=%ebx, rb=%ebp, valC = 0x8
+IF: Fetched mrmovl at 0x4e.  ra=%eax, rb=%ebp, valC = 0xc
+IF: Fetched andl at 0x54.  ra=%eax, rb=%eax, valC = 0x0
+IF: Fetched jle at 0x56.  ra=----, rb=----, valC = 0x8b
+IF: Fetched xorl at 0x8b.  ra=%eax, rb=%eax, valC = 0x0
+IF: Fetched mrmovl at 0x8d.  ra=%ebx, rb=%ebp, valC = 0xffffffe8
+IF: Fetched leave at 0x93.  ra=----, rb=----, valC = 0x0
+IF: Fetched ret at 0x94.  ra=----, rb=----, valC = 0x0
+IF: Fetched mrmovl at 0x7e.  ra=%edx, rb=%ebx, valC = 0x0
+IF: Fetched addl at 0x84.  ra=%edx, rb=%eax, valC = 0x0
+IF: Fetched jmp at 0x86.  ra=----, rb=----, valC = 0x8d
+IF: Fetched mrmovl at 0x8d.  ra=%ebx, rb=%ebp, valC = 0xffffffe8
+IF: Fetched leave at 0x93.  ra=----, rb=----, valC = 0x0
+IF: Fetched ret at 0x94.  ra=----, rb=----, valC = 0x0
+IF: Fetched mrmovl at 0x7e.  ra=%edx, rb=%ebx, valC = 0x0
+IF: Fetched addl at 0x84.  ra=%edx, rb=%eax, valC = 0x0
+IF: Fetched jmp at 0x86.  ra=----, rb=----, valC = 0x8d
+IF: Fetched mrmovl at 0x8d.  ra=%ebx, rb=%ebp, valC = 0xffffffe8
+IF: Fetched leave at 0x93.  ra=----, rb=----, valC = 0x0
+IF: Fetched ret at 0x94.  ra=----, rb=----, valC = 0x0
+IF: Fetched mrmovl at 0x7e.  ra=%edx, rb=%ebx, valC = 0x0
+IF: Fetched addl at 0x84.  ra=%edx, rb=%eax, valC = 0x0
+IF: Fetched jmp at 0x86.  ra=----, rb=----, valC = 0x8d
+IF: Fetched mrmovl at 0x8d.  ra=%ebx, rb=%ebp, valC = 0xffffffe8
+IF: Fetched leave at 0x93.  ra=----, rb=----, valC = 0x0
+IF: Fetched ret at 0x94.  ra=----, rb=----, valC = 0x0
+IF: Fetched mrmovl at 0x7e.  ra=%edx, rb=%ebx, valC = 0x0
+IF: Fetched addl at 0x84.  ra=%edx, rb=%eax, valC = 0x0
+IF: Fetched jmp at 0x86.  ra=----, rb=----, valC = 0x8d
+IF: Fetched mrmovl at 0x8d.  ra=%ebx, rb=%ebp, valC = 0xffffffe8
+IF: Fetched leave at 0x93.  ra=----, rb=----, valC = 0x0
+IF: Fetched ret at 0x94.  ra=----, rb=----, valC = 0x0
+IF: Fetched halt at 0x39.  ra=----, rb=----, valC = 0x0
+122 instructions executed
+Status = HLT
+Condition Codes: Z=0 S=0 O=0
+Changed Register State:
+%eax:	0x00000000	0x0000abcd
+%edx:	0x00000000	0x0000000d
+%esp:	0x00000000	0x000003f8
+%ebp:	0x00000000	0x00000400
+Changed Memory State:
+0x0318:	0x00000000	0x00000020
+0x0330:	0x00000000	0x00000360
+0x0334:	0x00000000	0x0000007e
+0x0338:	0x00000000	0x00000024
+0x0348:	0x00000000	0x0000001c
+0x0360:	0x00000000	0x00000390
+0x0364:	0x00000000	0x0000007e
+0x0368:	0x00000000	0x00000020
+0x036c:	0x00000000	0x00000001
+0x0378:	0x00000000	0x00000018
+0x0390:	0x00000000	0x000003c0
+0x0394:	0x00000000	0x0000007e
+0x0398:	0x00000000	0x0000001c
+0x039c:	0x00000000	0x00000002
+0x03a8:	0x00000000	0x00000014
+0x03c0:	0x00000000	0x000003f0
+0x03c4:	0x00000000	0x0000007e
+0x03c8:	0x00000000	0x00000018
+0x03cc:	0x00000000	0x00000003
+0x03f0:	0x00000000	0x00000400
+0x03f4:	0x00000000	0x00000039
+0x03f8:	0x00000000	0x00000014
+0x03fc:	0x00000000	0x00000004
+ISA Check Succeeds

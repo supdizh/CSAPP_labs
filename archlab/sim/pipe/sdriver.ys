@@ -1,0 +1,336 @@
+#######################################################################
+# Test for copying block of size 4;
+#######################################################################
+	.pos 0
+main:	irmovl Stack, %esp  	# Set up stack pointer
+	irmovl Stack, %ebp  	# Set up base pointer
+
+	# Set up arguments for copy function and then invoke it
+	irmovl $4, %eax		# src and dst have 4 elements
+	pushl %eax
+	irmovl dest, %eax	# dst array
+	pushl %eax
+	irmovl src, %eax	# src array
+	pushl %eax
+	call ncopy		 
+	halt			# should halt with num nonzeros in %eax
+StartFun:
+#/* $begin ncopy-ys */
+##################################################################
+# ncopy.ys - Copy a src block of len ints to dst.
+# Return the number of positive ints (>0) contained in src.
+#
+# Include your name and ID here.
+#
+# Describe how and why you modified the baseline code.
+# 1. replace all irmovl+addl to iaddl
+# 2. use 17-way loop unrolling(the label from Loop to Pos16 shows this)
+# 3. use a jumptable to deal with the left operations (when len<17)
+# 4. in the end, I skip the Done function but go back to main function directly
+##################################################################
+# Do not modify this portion
+# Function prologue.
+ncopy:	pushl %ebp		# Save old frame pointer
+	rrmovl %esp,%ebp	# Set up new frame pointer
+	pushl %esi		# Save callee-save regs
+	pushl %ebx
+	pushl %edi
+	mrmovl 8(%ebp),%ebx	# src
+	mrmovl 16(%ebp),%edx	# len
+	mrmovl 12(%ebp),%ecx	# dst
+
+##################################################################
+# You can modify this portion
+	# Loop header
+	xorl %eax, %eax         # count = 0
+	iaddl $-16, %edx	# len < 17?
+	jle Out			# if so, goto Out:
+
+Loop:	mrmovl 0(%ebx), %esi	# read val from src...
+	rmmovl %esi, 0(%ecx)	# ...and store it to dst
+	andl %esi, %esi		# val <= 0?
+	jle Pos1
+	iaddl $1, %eax		# count++;
+				#repeat for 17 times
+Pos1:	mrmovl 4(%ebx), %esi
+	rmmovl %esi, 4(%ecx)
+	andl %esi, %esi
+	jle Pos2
+	iaddl $1, %eax
+
+Pos2:	mrmovl 8(%ebx), %esi
+	rmmovl %esi, 8(%ecx)
+	andl %esi, %esi
+	jle Pos3
+	iaddl $1, %eax
+
+Pos3:	mrmovl 12(%ebx), %esi
+	rmmovl %esi, 12(%ecx)
+	andl %esi, %esi
+	jle Pos4
+	iaddl $1, %eax
+
+Pos4:	mrmovl 16(%ebx), %esi
+	rmmovl %esi, 16(%ecx)
+	andl %esi, %esi
+	jle Pos5
+	iaddl $1, %eax
+
+Pos5:	mrmovl 20(%ebx), %esi
+	rmmovl %esi, 20(%ecx)
+	andl %esi, %esi
+	jle Pos6
+	iaddl $1, %eax
+
+Pos6:	mrmovl 24(%ebx), %esi
+	rmmovl %esi, 24(%ecx)
+	andl %esi, %esi
+	jle Pos7
+	iaddl $1, %eax
+
+Pos7:	mrmovl 28(%ebx), %esi
+	rmmovl %esi, 28(%ecx)
+	andl %esi, %esi
+	jle Pos8
+	iaddl $1, %eax
+
+Pos8:	mrmovl 32(%ebx), %esi
+	rmmovl %esi, 32(%ecx)
+	andl %esi, %esi
+	jle Pos9
+	iaddl $1, %eax
+
+Pos9:	mrmovl 36(%ebx), %esi
+	rmmovl %esi, 36(%ecx)
+	andl %esi, %esi
+	jle Pos10
+	iaddl $1, %eax
+
+Pos10:	mrmovl 40(%ebx), %esi
+	rmmovl %esi, 40(%ecx)
+	andl %esi, %esi
+	jle Pos11
+	iaddl $1, %eax
+
+Pos11:	mrmovl 44(%ebx), %esi
+	rmmovl %esi, 44(%ecx)
+	andl %esi, %esi
+	jle Pos12
+	iaddl $1, %eax
+
+Pos12:	mrmovl 48(%ebx), %esi
+	rmmovl %esi, 48(%ecx)
+	andl %esi, %esi
+	jle Pos13
+	iaddl $1, %eax
+
+Pos13:	mrmovl 52(%ebx), %esi
+	rmmovl %esi, 52(%ecx)
+	andl %esi, %esi
+	jle Pos14
+	iaddl $1, %eax
+
+Pos14:	mrmovl 56(%ebx), %esi
+	rmmovl %esi, 56(%ecx)
+	andl %esi, %esi
+	jle Pos15
+	iaddl $1, %eax
+
+Pos15:	mrmovl 60(%ebx), %esi
+	rmmovl %esi, 60(%ecx)
+	andl %esi, %esi
+	jle Pos16
+	iaddl $1, %eax
+
+Pos16:  mrmovl 64(%ebx), %esi
+        rmmovl %esi, 64(%ecx)
+        andl %esi, %esi
+        jle Pos17
+        iaddl $1, %eax
+
+Pos17:	iaddl $68, %ebx		# src += 17;
+	iaddl $68, %ecx		# dest += 17;
+	iaddl $-17, %edx	# len -= 17;
+	jg Loop
+	
+Out:	addl %edx, %edx		# len *= 4;
+	addl %edx, %edx
+	mrmovl JTEnd(%edx), %edx #use a jumptable to deal with left operations
+	pushl %edx		# jmp *(JTEND + 4*(len0 - 16))
+	ret
+
+JT16:   mrmovl 60(%ebx), %esi
+        rmmovl %esi, 60(%ecx)
+        andl %esi, %esi
+        jle JT15
+        iaddl $1, %eax
+
+JT15:	mrmovl 56(%ebx), %esi
+	rmmovl %esi, 56(%ecx)
+	andl %esi, %esi
+	jle JT14
+	iaddl $1, %eax
+
+JT14:	mrmovl 52(%ebx), %esi
+	rmmovl %esi, 52(%ecx)
+	andl %esi, %esi
+	jle JT13
+	iaddl $1, %eax
+
+JT13:	mrmovl 48(%ebx), %esi
+	rmmovl %esi, 48(%ecx)
+	andl %esi, %esi
+	jle JT12
+	iaddl $1, %eax
+
+JT12:	mrmovl 44(%ebx), %esi
+	rmmovl %esi, 44(%ecx)
+	andl %esi, %esi
+	jle JT11
+	iaddl $1, %eax
+
+JT11:	mrmovl 40(%ebx), %esi
+	rmmovl %esi, 40(%ecx)
+	andl %esi, %esi
+	jle JT10
+	iaddl $1, %eax
+
+JT10:	mrmovl 36(%ebx), %esi
+	rmmovl %esi, 36(%ecx)
+	andl %esi, %esi
+	jle JT9
+	iaddl $1, %eax
+
+JT9:	mrmovl 32(%ebx), %esi
+	rmmovl %esi, 32(%ecx)
+	andl %esi, %esi
+	jle JT8
+	iaddl $1, %eax
+
+JT8:	mrmovl 28(%ebx), %esi
+	rmmovl %esi, 28(%ecx)
+	andl %esi, %esi
+	jle JT7
+	iaddl $1, %eax
+
+JT7:	mrmovl 24(%ebx), %esi
+	rmmovl %esi, 24(%ecx)
+	andl %esi, %esi
+	jle JT6
+	iaddl $1, %eax
+
+JT6:	mrmovl 20(%ebx), %esi
+	rmmovl %esi, 20(%ecx)
+	andl %esi, %esi
+	jle JT5
+	iaddl $1, %eax
+
+JT5:	mrmovl 16(%ebx), %esi
+	rmmovl %esi, 16(%ecx)
+	andl %esi, %esi
+	jle JT4
+	iaddl $1, %eax
+
+JT4:	mrmovl 12(%ebx), %esi
+	rmmovl %esi, 12(%ecx)
+	andl %esi, %esi
+	jle JT3
+	iaddl $1, %eax
+
+JT3:	mrmovl 8(%ebx), %esi
+	rmmovl %esi, 8(%ecx)
+	andl %esi, %esi
+	jle JT2
+	iaddl $1, %eax
+
+JT2:	mrmovl 4(%ebx), %esi
+	rmmovl %esi, 4(%ecx)
+	andl %esi, %esi
+	jle JT1
+	iaddl $1, %eax
+
+JT1:	mrmovl 0(%ebx), %esi
+	rmmovl %esi, 0(%ecx)
+	andl %esi, %esi
+	jle 0x29
+	iaddl $1, %eax
+JT0:	jmp 0x29	#directly go to halt(0x29)
+##################################################################
+# Do not modify the following section of code
+# Function epilogue.
+Done:
+	popl %edi               # Restore callee-save registers
+	popl %ebx
+	popl %esi
+	rrmovl %ebp, %esp
+	popl %ebp
+	ret
+##################################################################
+# Keep the following label at the end of your function
+# Jump Table
+	#.align 4
+JTStart:
+	.long	JT0
+	.long	JT1
+	.long	JT2
+	.long	JT3
+	.long	JT4
+	.long	JT5
+	.long	JT6
+	.long	JT7
+	.long	JT8
+	.long	JT9
+	.long	JT10
+	.long	JT11
+	.long	JT12
+	.long	JT13
+	.long	JT14
+	.long	JT15
+JTEnd:	.long	JT16
+
+End:
+#/* $end ncopy-ys */
+EndFun:
+
+###############################
+# Source and destination blocks 
+###############################
+	.align 4
+src:
+	.long -1
+	.long -2
+	.long 3
+	.long 4
+	.long 0xbcdefa # This shouldn't get moved
+
+	.align 16
+Predest:
+	.long 0xbcdefa
+dest:
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+	.long 0xcdefab
+Postdest:
+	.long 0xdefabc
+
+.align 4
+# Run time stack
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+	.long 0
+
+Stack:
