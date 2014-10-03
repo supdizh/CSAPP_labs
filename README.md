@@ -16,11 +16,11 @@ float_twice其实是float本身设计的比较巧妙
 各种x/3w然后树的样子画出来就好
 
 
-3
+3 archlab
 
-4
+4 performance lab
 
-5
+5 buffer lab
 
 6 malloclab
 这个做的时间最久了，从简单的explicit list 50分开始，到最后分层优化的Segregated list 98分
